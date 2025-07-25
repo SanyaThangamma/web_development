@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">
+    Please fill out this survey form to help us improve our services.
+    Your feedback is valuable and will only take a few minutes.
+    All responses will be kept confidential.
+    </p>
+
+    <form id="survey-form">
+    
+    <label id="name-label" for="name">Name:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Enter your name"
+    />
+    <br><br>
+
+
+    <label id="email-label" for="email">Email:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="example@gmail.com"
+    />
+    <br><br>
+
+
+    <label id="number-label" for="number">Age:</label>
+    <input
+        type="number"
+        id="number"
+        name="age"
+        min="10"
+        max="100"
+        placeholder="Enter Age"
+    />
+    <br><br>
+
+
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown" name="referral">
+        <option value="social-media">Social Media</option>
+        <option value="friend">Friend</option>
+    </select>
+    <br><br>
+
+    
+    <p>Would you recommend us to others?</p>
+    <input type="radio" id="yes" name="recommend" value="yes" />
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="recommend" value="no" />
+    <label for="no">No</label>
+    <br><br>
+
+    
+    <p>What did you like? (Select all that apply)</p>
+    <input type="checkbox" id="service" name="likes" value="service" />
+    <label for="service">Service</label>
+    <input type="checkbox" id="quality" name="likes" value="quality" />
+    <label for="quality">Product Quality</label>
+    <br><br>
+
+    
+    <label for="comments">Any comments?</label><br />
+    <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="40"
+        placeholder="Write your comments here..."
+    ></textarea>
+    <br><br>
+
+    
+    <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+</html>
